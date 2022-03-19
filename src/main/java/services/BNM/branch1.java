@@ -2,7 +2,7 @@ package services.BNM;
 
 import java.io.*;
 
-class branch11 {
+class branch1 {
     public static void main(String[] args)
     {
 
