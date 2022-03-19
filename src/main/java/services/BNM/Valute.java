@@ -5,6 +5,8 @@ import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
 @XStreamAlias("Valute")
 public class Valute {
+    @XStreamAlias("Numfirst")
+    private String numfirst;
 
     @XStreamAlias("NumCode")
     private String numCode;
@@ -31,18 +33,26 @@ public class Valute {
 
     public Valute(String numCode, String charCode, int nominal, String name, double value) {
         this.numCode = numCode;
+        this.numfirst = numfirst;
         this.charCode = charCode;
         this.nominal = nominal;
         this.name = name;
         this.value = value;
     }
 
-    public String getNumCode() {
+    public String getNumCod() {
         return numCode;
     }
 
-    public void setNumCode(String numCode) {
+    public void setNumCod(String numCode) {
         this.numCode = numCode;
+    }
+    public Object getnumfirst() {
+        return numfirst;
+    }
+
+    public void setnumfirst(String numfirst) {
+        this.numCode = numfirst;
     }
 
     public String getCharCode() {
